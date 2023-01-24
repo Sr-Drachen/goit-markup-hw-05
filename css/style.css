@@ -136,6 +136,7 @@ h1,h2,h3,h4,h5,h6,p{
   color: var(--brand-color);
 }
 .icon-envelope{
+  margin-right: 6px;
   fill: var(--main-color-grey);
 }
 .contact-list{
