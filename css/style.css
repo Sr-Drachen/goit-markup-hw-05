@@ -322,7 +322,24 @@ img {
 .dedication-section-item {
   flex-basis: calc((100% - 50px) / 3);
 }
-
+.box-dedication-button {
+    position: absolute;
+    top: 1557px;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+}    
+.text-dedication {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-background-light);
+    padding: 27px 79px;
+}
 /* ESTO ES TEAM SECTION */
 
 .team-section{
