@@ -666,28 +666,39 @@ img {
   color: var(--main-color-grey);
 }
 .projects-link{
+  position: relative;
   text-decoration: none;
   color: currentColor;
 }
 .projects-thumb{
   overflow: hidden;
   position: relative;
-}
-
-.projects-overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--brand-color);
-  padding: 63px 32px 63px 24px;
-  transform: translateY(100%);
-  transition: transform 250ms var(--cubic);
+  width: 364px;
+  height: auto;
 }
 .text-transition{
+  overflow: hidden;
+  background-color: var(--brand-color);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic);
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-background-semi-light);
+  padding: 63px 24px 63px 24px;
 }
-.projects-section-list-item:hover .projects-overlay {
+.text-transition:hover{
+  overflow: visible;
+}
+.projects-thumb {
+  position: relative;
+}
+.projects-thumb:hover .text-transition {
+  top: 0px;
+  overflow: visible;
   transform: translateY(0);
 }
+
+
