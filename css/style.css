@@ -115,6 +115,10 @@ img {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .menu-list-item:not(:last-child){
   margin-right: 50px;
@@ -162,14 +166,14 @@ img {
 }
 .menu-list-link:hover, .menu-list-link:focus, .menu-list-link:active{
   color: var(--brand-color);
-  transition-property: color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .icon-envelope{
   margin-right: 6px;
   fill: var(--main-color-grey);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .contact-list{
   display: flex;
@@ -185,37 +189,25 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-color-grey);
   text-decoration: none;
+  transition-property: color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .contact-list-item:not(:last-child){
   margin-right: 50px;
 }
 .contact-list-item:hover .contact-list-link{
   color: var(--brand-color);
-  transition-property: color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .contact-list-item:hover .icon-envelope{
   fill: var(--brand-color);
-  transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .contact-list-link:focus{
   color: var(--brand-color);
-  transition-property: color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .contact-list-link:focus .icon-envelope{
   fill: var(--brand-color);
-  transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .contact-list-item:not(:last-child){
   margin-right: 50px;
@@ -295,6 +287,10 @@ img {
   height: 30px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-property: background-color  , transform;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .close-button-icon{
   width: 11px;
@@ -303,18 +299,10 @@ img {
 .close-button:hover{
   background-color: var(--brand-color);
   fill: var(--main-color-light);
-  transition-property: background-color  , transform;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .close-button:focus{
   background-color: var(--brand-color);
   fill: var(--main-color-light);
-  transition-property: background-color  , transform;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 /* ESTO ES FEATURE SECTION */
 
@@ -447,47 +435,33 @@ img {
   height: 40px;
   align-items: center;
   justify-content: center;
+  transition-property: fill, transform;
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 
 .team-soc-item:hover .team-soc-link{
   background-color: var(--brand-color);
-  transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .team-soc-item:hover .team-soc-icon{
   fill: var(--main-color-light);
-  transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
-}
-.team-soc-link .team-soc-icon:focus {
-  fill: var(--main-color-light);
-  transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .team-soc-link:focus{
   background-color: var(--brand-color);
-  transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .team-soc-link:focus .team-soc-icon{
   fill: var(--main-color-light);
-  transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .team-soc-icon{
   height: 20px;
   width: 20px;
   fill: #AFB1B8;
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .team-dedication {
   flex-wrap: wrap;
@@ -564,47 +538,43 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .clients-list-item{
   width: 168px;
   height: 88px;
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 
 .clients-list-item:hover .clients-link{
   color: var(--brand-color);
   border-color: solid 1px var(--brand-color);
-  transition-property: border-color color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .clients-list-item:hover .clients-icon{
   fill: var(--brand-color);
-  transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .clients-link:focus .clients-icon{
   background-color: var(--main-background-light);
   fill: var(--brand-color);
-  transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .clients-icon {
   width: 104px;
   height: 56px;
   fill: currentColor;
   fill: #AFB1B8;
-}
-.clients-icon:hover{
-  fill: var(--brand-color);
   transition-property: fill, transform;
   transition-duration: 500ms;
   transition-timing-function: linear;
   transition-delay: 0;
+}
+.clients-icon:hover{
+  fill: var(--brand-color);
 }
 
 
@@ -642,15 +612,15 @@ img {
   color: var(--main-color-grey);
   text-decoration: none;
   list-style: none;
+  transition-property: color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 
 .contacts:hover,
 .contacts:focus {
   color: var(--brand-color);
-  transition-property: color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .link.site {
   font-style: normal;
@@ -669,24 +639,24 @@ img {
 .icon-footer {
   cursor: pointer;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .icon-footer-encuentranos{
   fill: var(--main-color-light);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .icon-footer:hover{
   background-color: var(--brand-color);
-  transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .icon-footer-encuentranos:focus .icon-footer{
   background-color: var(--brand-color);
-  transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .container-icon-footer {
   display: flex;
@@ -725,6 +695,10 @@ img {
   border: 0;
   padding: 6px 20px 6px 20px;
   border-radius: 4px;
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .menu-section-button:hover, .menu-section-button:focus, .menu-section-button:active{
   background-color: var(--brand-color);
@@ -732,10 +706,6 @@ img {
   border-radius: 4px;
   color:  var(--main-color-light);
   cursor: pointer;
-  transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 }
 .menu-section-button-all{
   display: flex;
@@ -766,10 +736,10 @@ img {
   flex-basis: calc((100% - 75px) / 3);
   background:var(--main-background-light);
   border: 1px solid var(--main-border-light);
+  transition: border 250ms var(--cubic);
 }
 .projects-section-list-item:hover{
   border: 1px solid var(--main-border-light);
-  transition: border 250ms var(--cubic);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-section-title-text{
