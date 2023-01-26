@@ -132,13 +132,14 @@ img {
   position: relative;
 }
 .active::after{
-    position: absolute;
-    bottom: -1px;
-    content: "";
-    width: 100%;
-    height: 4px;
-    background: var(--brand-color);
-    border-radius: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: var(--brand-color);
+  border-radius: 2px;
 }
 .menu-list-portafolio{
   font-size: 14px;
@@ -151,9 +152,16 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.menu-list-portafolio.active {
+  color: var(--brand-color);
+  position: relative;
+}
 .menu-list-link:hover, .menu-list-link:focus, .menu-list-link:active{
   color: var(--brand-color);
-  transition: color 250ms var(--cubic);
+  transition-property: color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .icon-envelope{
   margin-right: 6px;
@@ -179,19 +187,31 @@ img {
 }
 .contact-list-item:hover .contact-list-link{
   color: var(--brand-color);
-  transition: color 250ms var(--cubic);
+  transition-property: color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .contact-list-item:hover .icon-envelope{
   fill: var(--brand-color);
-  transition: color 250ms var(--cubic);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .contact-list-link:focus{
   color: var(--brand-color);
-  transition: color 250ms var(--cubic);
+  transition-property: color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .contact-list-link:focus .icon-envelope{
   fill: var(--brand-color);
-  transition: color 250ms var(--cubic);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .contact-list-item:not(:last-child){
   margin-right: 50px;
@@ -374,6 +394,10 @@ img {
 
 .team-section{
   background-color: var(--main-background-chill);
+  padding-bottom: 0;
+}
+.team-container{
+  padding-bottom: 94px;
 }
 .team-section-title{
   display: block;
@@ -401,23 +425,38 @@ img {
 
 .team-soc-item:hover .team-soc-link{
   background-color: var(--brand-color);
-  transition: background-color 250ms var(--cubic);
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .team-soc-item:hover .team-soc-icon{
   fill: var(--main-color-light);
-  transition: fill 250ms var(--cubic);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .team-soc-link .team-soc-icon:focus {
   fill: var(--main-color-light);
-  transition: fill 250ms var(--cubic);
+    transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .team-soc-link:focus{
- background-color: var(--brand-color);
- transition: background-color 250ms var(--cubic);
+  background-color: var(--brand-color);
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .team-soc-link:focus .team-soc-icon{
   fill: var(--main-color-light);
-  transition: fill 250ms var(--cubic);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .team-soc-icon{
   height: 20px;
@@ -464,19 +503,21 @@ img {
 }
 
 /*ESTO ES CLIENTS */
-
+.section-fifth{
+  background-color: var(--main-background-light);
+}
 .clients-title { 
-    margin-top: 59px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: var(--main-color-dark);
-    text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--main-color-dark);
+  text-align: center;
+  margin-bottom: 50px;
 }
 .clients-list {
-    display: flex; 
-    gap: 24px;
+  display: flex; 
+  gap: 24px;
 }
 .site {
   font-size: 14px;
@@ -489,35 +530,42 @@ img {
   flex-basis: calc((100% - 130px) / 6);
 }
 .clients-link{
-    border-radius: 4px;
-    width: 168px;
-    height: 88px;
-    border: 1px solid var(--main-border-grey);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--main-border-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .clients-list-item{
-    width: 168px;
-    height: 88px;
+  width: 168px;
+  height: 88px;
 }
 
 .clients-list-item:hover .clients-link{
   color: var(--brand-color);
   border-color: solid 1px var(--brand-color);
-  transition: color 250ms var(--cubic);
-  transition: border-color 250ms var(--cubic);
+  transition-property: border-color color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .clients-list-item:hover .clients-icon{
   fill: var(--brand-color);
-   transition: fill 250ms var(--cubic);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .clients-link:focus .clients-icon{
-  background-color: var(--main-background-chill);
+  background-color: var(--main-background-light);
   fill: var(--brand-color);
-  transition: background-color 250ms var(--cubic);
-  transition: fill 250ms var(--cubic);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .clients-icon {
   width: 104px;
@@ -527,6 +575,10 @@ img {
 }
 .clients-icon:hover{
   fill: var(--brand-color);
+  transition-property: fill, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 
 
@@ -569,7 +621,10 @@ img {
 .contacts:hover,
 .contacts:focus {
   color: var(--brand-color);
-  transition: color 250ms var(--cubic);
+  transition-property: color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .link.site {
   font-style: normal;
@@ -595,11 +650,17 @@ img {
 }
 .icon-footer:hover{
   background-color: var(--brand-color);
-  transition: background-color 250ms var(--cubic);
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .icon-footer-encuentranos:focus .icon-footer{
   background-color: var(--brand-color);
-  transition: background-color 250ms var(--cubic);
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .container-icon-footer {
   display: flex;
@@ -645,8 +706,10 @@ img {
   border-radius: 4px;
   color:  var(--main-color-light);
   cursor: pointer;
-  transition: background-color 250ms var(--cubic);
-  transition: color 250ms var(--cubic);
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 .menu-section-button-all{
   display: flex;
