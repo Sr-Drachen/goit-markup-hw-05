@@ -116,8 +116,8 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   transition-property: color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .menu-list-item:not(:last-child){
@@ -171,8 +171,8 @@ img {
   margin-right: 6px;
   fill: var(--main-color-grey);
   transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .contact-list{
@@ -190,8 +190,8 @@ img {
   color: var(--main-color-grey);
   text-decoration: none;
   transition-property: color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .contact-list-item:not(:last-child){
@@ -264,7 +264,7 @@ img {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
   border-radius: 4px;
 }
 .modal{
@@ -272,7 +272,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
   width: 528px;
   height: 581px;
   background: #FFFFFF;
@@ -289,7 +289,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition-property: background-color  , transform;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .close-button-icon{
@@ -437,8 +437,8 @@ img {
   justify-content: center;
   transition-property: fill, transform;
   transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 
@@ -459,8 +459,8 @@ img {
   width: 20px;
   fill: #AFB1B8;
   transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .team-dedication {
@@ -539,16 +539,16 @@ img {
   justify-content: center;
   cursor: pointer;
   transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .clients-list-item{
   width: 168px;
   height: 88px;
   transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 
@@ -569,8 +569,8 @@ img {
   fill: currentColor;
   fill: #AFB1B8;
   transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .clients-icon:hover{
@@ -613,8 +613,8 @@ img {
   text-decoration: none;
   list-style: none;
   transition-property: color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 
@@ -641,15 +641,15 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .icon-footer-encuentranos{
   fill: var(--main-color-light);
   transition-property: fill, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .icon-footer:hover{
@@ -696,8 +696,8 @@ img {
   padding: 6px 20px 6px 20px;
   border-radius: 4px;
   transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
   transition-delay: 0;
 }
 .menu-section-button:hover, .menu-section-button:focus, .menu-section-button:active{
